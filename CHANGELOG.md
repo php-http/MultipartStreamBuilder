@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.1 - 2024-06-10
+
+- Added missing mimetype for `.webp` images.
+
 ## 1.3.0 - 2023-04-28
 
 - Removed unnecessary dependency on deprecated `php-http/message-factory`
