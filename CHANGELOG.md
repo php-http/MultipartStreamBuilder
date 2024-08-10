@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.2 - 2024-08-10
+
+- Remove default `Content-Length` header from MultipartStreamBuilder class.
+
 ## 1.3.1 - 2024-06-10
 
 - Added missing mimetype for `.webp` images.
