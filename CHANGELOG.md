@@ -1,8 +1,8 @@
 # Change Log
 
-## 1.3.2 - 2024-08-10
+## 1.4.0 - 2024-09-01
 
-- Remove default `Content-Length` header from MultipartStreamBuilder class.
+- No longer automatically add a `Content-Length` header for each part in MultipartStreamBuilder class to comply with RFC 7578 section 4.8.
 
 ## 1.3.1 - 2024-06-10
 
