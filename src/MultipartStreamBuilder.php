@@ -95,9 +95,9 @@ class MultipartStreamBuilder
      * @param string|resource|StreamInterface $resource
      * @param array                           $options  {
      *
-     *     @var array  $headers additional headers ['header-name' => 'header-value']
-     *     @var string $filename
-     * }
+     * @var array  $headers additional headers ['header-name' => 'header-value']
+     * @var string $filename
+     *             }
      *
      * @return MultipartStreamBuilder
      */
