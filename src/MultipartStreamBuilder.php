@@ -91,13 +91,13 @@ class MultipartStreamBuilder
     /**
      * Add a resource to the Multipart Stream.
      *
-     * @param string                          $name     the formpost name
-     * @param string|resource|StreamInterface $resource
-     * @param array                           $options  {
+     * @param string                                                      $name     the formpost name
+     * @param string|resource|StreamInterface                             $resource
+     * @param array{'headers': array<string, string>, 'filename': string} $options
      *
-     * @var array  $headers additional headers ['header-name' => 'header-value']
-     * @var string $filename
-     *             }
+     * Options:
+     * - headers: additional headers as hashmap ['header-name' => 'header-value']
+     * - filename: used to determine the mime type
      *
      * @return MultipartStreamBuilder
      */
