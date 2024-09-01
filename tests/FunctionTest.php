@@ -88,13 +88,16 @@ class FunctionTest extends TestCase
         $this->assertTrue(false === strpos($multipartStream, 'Content-Disposition:'));
     }
 
-    public function testContentLength()
+    /**
+     * Comply with RFC 7578 section 4.8
+     */
+    public function testShouldNotContainContentLength()
     {
         $builder = new MultipartStreamBuilder();
         $builder->addResource('foobar', 'stream contents');
 
         $multipartStream = (string) $builder->build();
-        $this->assertTrue(false !== strpos($multipartStream, 'Content-Length: 15'));
+        $this->assertTrue(false === strpos($multipartStream, 'Content-Length:'));
     }
 
     public function testFormName()

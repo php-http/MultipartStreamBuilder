@@ -95,9 +95,9 @@ class MultipartStreamBuilder
      * @param string|resource|StreamInterface $resource
      * @param array                           $options  {
      *
-     *     @var array $headers additional headers ['header-name' => 'header-value']
-     *     @var string $filename
-     * }
+     * @var array  $headers additional headers ['header-name' => 'header-value']
+     * @var string $filename
+     *             }
      *
      * @return MultipartStreamBuilder
      */
@@ -182,13 +182,6 @@ class MultipartStreamBuilder
             $headers['Content-Disposition'] = sprintf('form-data; name="%s"', $name);
             if ($hasFilename) {
                 $headers['Content-Disposition'] .= sprintf('; filename="%s"', $this->basename($filename));
-            }
-        }
-
-        // Set a default content-length header if one was not provided
-        if (!$this->hasHeader($headers, 'content-length')) {
-            if ($length = $stream->getSize()) {
-                $headers['Content-Length'] = (string) $length;
             }
         }
 
