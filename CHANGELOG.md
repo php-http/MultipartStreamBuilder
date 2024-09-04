@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.1 - 2024-09-04
+
+- Fix phpdoc for addResource options to make the options not required.
+
 ## 1.4.0 - 2024-09-01
 
 - No longer automatically add a `Content-Length` header for each part in MultipartStreamBuilder class to comply with RFC 7578 section 4.8.
