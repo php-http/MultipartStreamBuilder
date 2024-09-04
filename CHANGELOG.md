@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.2 - 2024-09-04
+
+- Fix phpdoc syntax.
+
 ## 1.4.1 - 2024-09-04
 
 - Fix phpdoc for addResource options to make the options not required.
