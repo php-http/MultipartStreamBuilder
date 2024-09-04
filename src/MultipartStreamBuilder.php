@@ -93,7 +93,7 @@ class MultipartStreamBuilder
      *
      * @param string                                                        $name     the formpost name
      * @param string|resource|StreamInterface                               $resource
-     * @param array{'headers?': array<string, string>, 'filename?': string} $options
+     * @param array{headers?: array<string, string>, filename?: string} $options
      *
      * Options:
      * - headers: additional headers as hashmap ['header-name' => 'header-value']
