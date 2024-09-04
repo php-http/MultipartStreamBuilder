@@ -91,8 +91,8 @@ class MultipartStreamBuilder
     /**
      * Add a resource to the Multipart Stream.
      *
-     * @param string                                                        $name     the formpost name
-     * @param string|resource|StreamInterface                               $resource
+     * @param string                                                    $name     the formpost name
+     * @param string|resource|StreamInterface                           $resource
      * @param array{headers?: array<string, string>, filename?: string} $options
      *
      * Options:
